@@ -38,8 +38,10 @@ fs.createReadStream(
               population,
               saarcdata
             );
-            const aseanPopulationvsallYears =
-              aseanPopulationvsYears(population, aseandata);
+            const aseanPopulationvsallYears = aseanPopulationvsYears(
+              population,
+              aseandata
+            );
 
             function dumpData(data, file) {
               const finished = (error) => {

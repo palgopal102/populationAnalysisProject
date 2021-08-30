@@ -33,19 +33,19 @@ function aseanPopulationFor2015(population, aseandata) {
 // 3: Over the years, TOTAL population of SAARC countries
 
 function totalPopulationOfSaarc(population, saarcdata) {
-    var result = {};
+  var result = {};
 
-    for (let i = 0; i < population.length; i++) {
-      for (let j = 0; j < saarcdata.length; j++) {
-        if (saarcdata[j].Country == population[i].Region) {
-          if (population[i].Year in result) {
-            result[population[i].Year] += Number(population[i].Population);
-          } else {
-            result[population[i].Year] = Number(population[i].Population);
-          }
+  for (let i = 0; i < population.length; i++) {
+    for (let j = 0; j < saarcdata.length; j++) {
+      if (saarcdata[j].Country == population[i].Region) {
+        if (population[i].Year in result) {
+          result[population[i].Year] += Number(population[i].Population);
+        } else {
+          result[population[i].Year] = Number(population[i].Population);
         }
       }
     }
+  }
 
   return result;
 }
