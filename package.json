@@ -1,0 +1,16 @@
+{
+  "name": "population_project_barchart",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "http-server": "^13.0.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
