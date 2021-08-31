@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ],
       });
     })
-    .catch(error => console.error(error));
+    .catch((error) => console.error(error));
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -59,8 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((response) => response.json())
     .then((data) => {
       let plotdata = Object.entries(data);
-
-      console.log(plotdata);
 
       Highcharts.chart("aseanPopulationForyear2015", {
         chart: {
@@ -108,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ],
       });
     })
-    .catch(error => console.error(error));
+    .catch((error) => console.error(error));
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -116,10 +114,6 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((response) => response.json())
     .then((data) => {
       let plotdata = Object.entries(data);
-      for (const i of plotdata) {
-        i[1] = Number(i[1]);
-      }
-      console.log(plotdata);
 
       Highcharts.chart("totalPopulationOftheSaarc", {
         chart: {
@@ -167,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ],
       });
     })
-    .catch(error => console.error(error));
+    .catch((error) => console.error(error));
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -175,10 +169,6 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((response) => response.json())
     .then((data) => {
       let plotdata = Object.entries(data);
-      for (const i of plotdata) {
-        i[1] = Number(i[1]);
-      }
-      console.log(plotdata);
 
       Highcharts.chart("aseanPopulationvsallYears", {
         chart: {
@@ -226,5 +216,5 @@ document.addEventListener("DOMContentLoaded", function () {
         ],
       });
     })
-    .catch(error => console.error(error));
+    .catch((error) => console.error(error));
 });
