@@ -50,7 +50,8 @@ document.addEventListener("DOMContentLoaded", function () {
           },
         ],
       });
-    });
+    })
+    .catch(error => console.error(error));
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -106,7 +107,8 @@ document.addEventListener("DOMContentLoaded", function () {
           },
         ],
       });
-    });
+    })
+    .catch(error => console.error(error));
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -164,7 +166,8 @@ document.addEventListener("DOMContentLoaded", function () {
           },
         ],
       });
-    });
+    })
+    .catch(error => console.error(error));
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -222,5 +225,6 @@ document.addEventListener("DOMContentLoaded", function () {
           },
         ],
       });
-    });
+    })
+    .catch(error => console.error(error));
 });
